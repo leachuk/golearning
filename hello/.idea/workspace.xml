@@ -14,22 +14,34 @@
       <file leaf-file-name="hello.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="73">
+              <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
               <folding>
-                <element signature="e#14#64#0" expanded="true" />
+                <element signature="e#14#119#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="learningInterfaces.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="learningInterfaces.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learningInterfaces.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="209">
+              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
               <folding>
-                <element signature="e#14#31#0" expanded="true" />
+                <element signature="e#14#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="somefile.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/somefile.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="41" />
+              <folding>
+                <element signature="e#14#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,6 +65,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/test/somefile.go" />
         <option value="$PROJECT_DIR$/hello.go" />
         <option value="$PROJECT_DIR$/learningInterfaces.go" />
       </list>
@@ -65,8 +78,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="353" />
-    <option name="y" value="185" />
+    <option name="x" value="485" />
+    <option name="y" value="183" />
     <option name="width" value="1348" />
     <option name="height" value="1100" />
   </component>
@@ -122,7 +135,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Single File.go run learningInterfaces.go">
+  <component name="RunManager" selected="Go Application.Unnamed">
+    <configuration name="Unnamed" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="hello" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <filePath value="$PROJECT_DIR$/test/somefile.go" />
+      <kind value="PACKAGE" />
+      <package value="github.com/leachuk/golearning/hello" />
+      <directory value="$PROJECT_DIR$" />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
@@ -235,14 +257,15 @@
       <working_directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/learningInterfaces.go" />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Go Single File.go run hello.go" />
-      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run learningInterfaces.go" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Go Application.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="Go Single File.go run hello.go" />
+      <item index="2" class="java.lang.String" itemvalue="Go Single File.go run learningInterfaces.go" />
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run learningInterfaces.go" />
-        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run hello.go" />
+        <item index="0" class="java.lang.String" itemvalue="Go Single File.go run hello.go" />
+        <item index="1" class="java.lang.String" itemvalue="Go Single File.go run learningInterfaces.go" />
       </list>
     </recent_temporary>
   </component>
@@ -258,15 +281,15 @@
       <updated>1513120215442</updated>
       <workItem from="1513120222819" duration="703000" />
       <workItem from="1513122238013" duration="7496000" />
-      <workItem from="1513224108658" duration="958000" />
+      <workItem from="1513224108658" duration="3453000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9157000" />
+    <option name="totallyTimeSpent" value="11652000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="353" y="185" width="1348" height="1100" extended-state="0" />
+    <frame x="485" y="183" width="1348" height="1100" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -287,7 +310,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -304,7 +327,17 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/test/somefile.go</url>
+          <line>6</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -313,7 +346,7 @@
         <state relative-caret-position="210">
           <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <element signature="e#14#64#0" expanded="true" />
+            <element signature="e#14#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -323,27 +356,37 @@
         <state relative-caret-position="225">
           <caret line="17" column="63" lean-forward="false" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
           <folding>
-            <element signature="e#14#31#0" expanded="true" />
+            <element signature="e#14#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hello.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="73">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
           <folding>
-            <element signature="e#14#64#0" expanded="true" />
+            <element signature="e#14#119#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learningInterfaces.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        <state relative-caret-position="209">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
           <folding>
-            <element signature="e#14#31#0" expanded="true" />
+            <element signature="e#14#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/somefile.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="41" />
+          <folding>
+            <element signature="e#14#30#0" expanded="true" />
           </folding>
         </state>
       </provider>

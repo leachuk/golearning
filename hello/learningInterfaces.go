@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
 type MyFooInt interface {
@@ -29,10 +30,13 @@ func SomeMethod(x float64) (float64, error) {
 	return 0, nil
 }
 
-func main() {
+func hello() {
 	fmt.Printf("Interface test")
 	var myFoo MyFooInt = T{"\nhello"}
 	myFoo.Foo();
+
+	urlSplit := strings.Split("/asdff/sadffq/qwwetg/erg", "/")
+	fmt.Println(urlSplit)
 
 	fmt.Println( SomeMethod(2))
 	fmt.Println( SomeMethod(-1))

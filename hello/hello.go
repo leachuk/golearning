@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/leachuk/stringutil"
+	"github.com/leachuk/golearning/stringutil"
+	"github.com/leachuk/golearning/hello/test"
 )
 
 type FooVertex struct {
@@ -30,6 +31,9 @@ func main() {
 	v := FooVertex{3, 3}
 	fmt.Printf("\nFooSum:%v", v.FooSum())
 	fmt.Printf("\nFooMinus:%v", v.FooMinus())
+
+	splitIt := test.DebugThis("/dfgdsg/gewgewrg/sdfgsgf/sdgsrtg")
+	fmt.Println(splitIt)
 
 	v.FooScale(10);
 	fmt.Printf("\nV:%v", v)
