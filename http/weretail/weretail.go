@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"log"
 	"strings"
-	"io/ioutil"
+ 	"io/ioutil"
+	"time"
 )
 
 type Homepage struct {
@@ -39,7 +40,8 @@ func HandleWeretail(w http.ResponseWriter, r *http.Request) {
 
 func homepageController(w http.ResponseWriter, r *http.Request) {
 	//fmt.Fprintf(w, "weretail homepage controller: %v", r.URL.Path)
-	resp, err := http.Get("http://admin:admin@localhost:4502/content/we-retail/us/en/jcr:content.-1.json")
+	var client = &http.Client{Timeout: 10 * time.Second}
+	resp, err := client.Get("http://admin:admin@localhost:4502/content/we-retail/us/en/jcr:content.-1.json")
 	if err != nil {
 		log.Fatal(err)
 	} else {
