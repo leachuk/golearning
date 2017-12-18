@@ -8,6 +8,11 @@ import (
 	"io/ioutil"
 )
 
+type Homepage struct {
+	Title  	string	`json:"jcr:title"`
+	Root 	map[string]string	`json:"root"`
+}
+
 func HandleWeretail(w http.ResponseWriter, r *http.Request) {
 	//time.Sleep(7 * time.Second) // Need a way of handling long running methods gracefully. Done with http.TimeoutHandler
 	//parse URL
@@ -38,6 +43,7 @@ func homepageController(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Fatal(err)
 	} else {
+		//return response as direct pass through
 		defer resp.Body.Close()
 		body, err := ioutil.ReadAll(resp.Body)
 		if err != nil {
@@ -45,8 +51,14 @@ func homepageController(w http.ResponseWriter, r *http.Request) {
 		}
 		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 		w.WriteHeader(http.StatusOK)
-		//json.NewEncoder(w).Encode(string(body))
-		fmt.Fprintf(w, "%v", string(body))
+		fmt.Fprint(w, string(body))
+
+		//return response as parsed json structure
+		//defer resp.Body.Close()
+		//
+		//homepage := new(Homepage)
+		//json.NewDecoder(resp.Body).Decode(homepage)
+		//fmt.Fprint(w, homepage.Root["sling:resourceType"])
 	}
 }
 
