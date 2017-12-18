@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"strings"
+	"io/ioutil"
 )
 
 func HandleWeretail(w http.ResponseWriter, r *http.Request) {
@@ -20,10 +21,10 @@ func HandleWeretail(w http.ResponseWriter, r *http.Request) {
 	switch controller {
 
 	case "homepage":
-		homepageController(w)
+		homepageController(w, r)
 
 	case "aboutus":
-		aboutUsController(w)
+		aboutUsController(w, r)
 
 	default:
 		fmt.Fprintf(w, "weretail, controller not recognised: %v", controller)
@@ -31,10 +32,24 @@ func HandleWeretail(w http.ResponseWriter, r *http.Request) {
 	//http.Error(w, "Some Error", 500)
 }
 
-func homepageController(w http.ResponseWriter,) {
-	fmt.Fprintf(w, "weretail homepage controller: %v", "foo")
+func homepageController(w http.ResponseWriter, r *http.Request) {
+	//fmt.Fprintf(w, "weretail homepage controller: %v", r.URL.Path)
+	resp, err := http.Get("http://admin:admin@localhost:4502/content/we-retail/us/en/jcr:content.-1.json")
+	if err != nil {
+		log.Fatal(err)
+	} else {
+		defer resp.Body.Close()
+		body, err := ioutil.ReadAll(resp.Body)
+		if err != nil {
+			log.Fatal(err)
+		}
+		w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+		w.WriteHeader(http.StatusOK)
+		//json.NewEncoder(w).Encode(string(body))
+		fmt.Fprintf(w, "%v", string(body))
+	}
 }
 
-func aboutUsController(w http.ResponseWriter,) {
-	fmt.Fprintf(w, "weretail aboutus controller: %v", "foo")
+func aboutUsController(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "weretail aboutus controller: %v", r.URL.Path)
 }

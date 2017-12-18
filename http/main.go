@@ -43,8 +43,7 @@ func main() {
 	//http.Handle("/string", String("I'm a frayed knot."))
 	//http.Handle("/struct", &Struct{"Hello", ":", "Gophers!"})
 	//http.HandleFunc("/querytest", handleQuery)
-	//`
-	//http.HandleFunc("/site1/", handleSite1)
+	mux.HandleFunc("/site1/", handleSite1)
 	//http.HandleFunc("/site2/", handleSite2)
 
 	mux.HandleFunc("/weretail/", weretail.HandleWeretail)
